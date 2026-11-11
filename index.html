@@ -314,14 +314,14 @@ h1 em,h2 em,h3 em{color:var(--accent-2);font-weight:500}
 
 /* WORK — showcase slider */
 .work{background:linear-gradient(180deg,var(--bg) 0,var(--bg-2) 30%,var(--bg-2) 70%,var(--bg) 100%)}
-.show{position:relative;height:min(680px,82vh);border-radius:var(--r-lg);overflow:hidden;background:var(--surface)}
+.showcase{position:relative;height:min(680px,82vh);border-radius:var(--r-lg);overflow:hidden;background:var(--surface)}
 .slide{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr);gap:3px;opacity:0;visibility:hidden;transition:opacity .9s var(--ease),visibility 0s .9s}
 .slide.on{opacity:1;visibility:visible;transition:opacity .9s var(--ease)}
 .slide div{overflow:hidden}
 .slide img{width:100%;height:100%;object-fit:cover;transform:scale(1.14);transition:transform 1.6s var(--ease-out)}
 .slide.on img{transform:none}
 .slide.on div:nth-child(2) img{transition-delay:.08s}.slide.on div:nth-child(3) img{transition-delay:.16s}
-.show::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,11,10,.1) 30%,rgba(8,11,10,.9) 100%);pointer-events:none}
+.showcase::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,11,10,.1) 30%,rgba(8,11,10,.9) 100%);pointer-events:none}
 .show-info{position:absolute;left:40px;bottom:104px;z-index:3;max-width:560px}
 .show-info .for{font-size:12.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-2)}
 .show-info h3{font-size:clamp(40px,4.6vw,68px);margin:8px 0 6px}
@@ -453,7 +453,7 @@ html.lock{overflow:hidden}
   .about .wrap,.how .wrap,.book .wrap,.pv-head .wrap,.pv-next .wrap{grid-template-columns:1fr}
   .mason{margin-right:0;height:auto;grid-template-columns:1fr 1fr}.mason .big{grid-column:1/-1;height:70vw}.mason .col{height:90vw}.mason .seal{left:10px}
   .hero-bg{grid-template-columns:1fr 1fr}.hero-bg div:nth-child(n+3){display:none}
-  .show{height:78vh}.slide{grid-template-columns:1fr}.slide div:nth-child(n+2){display:none}
+  .showcase{height:78vh}.slide{grid-template-columns:1fr}.slide div:nth-child(n+2){display:none}
   .show-info{left:20px;bottom:214px}.show-open{left:20px;right:auto;bottom:158px}
   .show-tabs{left:14px;right:14px;bottom:14px;grid-template-columns:1fr;gap:6px}.show-tabs button,.show-tabs a{height:40px}
   .duo{height:110vw}.duo .seal{right:8px}
@@ -506,7 +506,11 @@ body.menu-open .menu-btn i:nth-child(1),body.menu-open .menu-btn i:nth-child(2){
   .footer .mega{font-size:clamp(52px,16vw,90px)}
 }
 @media (max-width:380px){.pills a{padding:7px 9px;font-size:11px}.logo{font-size:13px;letter-spacing:.1em}}
-@media (min-width:1700px){:root{--wrap:1440px}body{font-size:16.5px}.show{height:min(760px,78vh)}}
+@media (min-width:1700px){:root{--wrap:1440px}body{font-size:16.5px}.showcase{height:min(760px,78vh)}}
+[data-split] .w{padding-top:.14em;margin-top:-.14em}
+.footer .mega .w{padding-top:.24em;margin-top:-.24em;padding-bottom:.14em;margin-bottom:-.14em}
+.footer .mega{line-height:1;padding-top:.1em}
+.footer{padding-bottom:96px}
 </style>
 </head>
 <body>
@@ -578,7 +582,7 @@ body.menu-open .menu-btn i:nth-child(1),body.menu-open .menu-btn i:nth-child(2){
 <section class="work" id="work">
   <div class="wrap">
     <div class="sec-head"><div><span class="eyebrow">Our projects</span><h2 data-split>Spaces we built, made for <em>brands you know.</em></h2></div><p class="lead">Pick a project to see who it was made for, then open it to walk through the space room by room.</p></div>
-    <div class="show" data-reveal="fade" id="show">
+    <div class="showcase" data-reveal="fade" id="show">
       <a class="slide on" href="#project/cnf" data-cursor="Open" aria-label="Open the Cakes N Flakes project"><div><img src="assets/stills/cnf_corner.webp" alt="Long room with a palm mural at Cakes N Flakes"></div><div><img src="assets/stills/cnf_green.webp" alt="Arched mirror on an ivy wall"></div><div><img src="assets/stills/cnf_sign.webp" alt="Cakes N Flakes sign on the wall"></div></a>
       <a class="slide" href="#project/csb" data-cursor="Open" aria-label="Open the Chai Sutta Bar project"><div><img src="assets/stills/csb_chaiwall.webp" alt="Booth seating under a lit teapot wall sign at Chai Sutta Bar"></div><div><img src="assets/stills/csb_peacock.webp" alt="Peacock mural wall"></div><div><img src="assets/stills/csb_bar.webp" alt="Service bar with pendant lights"></div></a>
       <div class="show-info"><span class="for" id="sFor">Project 01 · Made for</span><h3 id="sName">Cakes N Flakes</h3><p id="sType">Café interior</p></div>
