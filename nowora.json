@@ -1,0 +1,11 @@
+{
+  "name": "House of Infra",
+  "niche": "Construction, interiors & architecture",
+  "description": "A dark-green studio site for a Ludhiana construction and interiors firm, with a project showcase, scroll-through project films for each client and an appointment form.",
+  "tag": "Services",
+  "slug": "house-of-infra",
+  "trackId": "house-of-infra",
+  "status": "live",
+  "url": "",
+  "client": { "name": "House of Infra", "phone": "", "email": "houseofinfra@gmail.com", "package": "", "price": "" }
+}
