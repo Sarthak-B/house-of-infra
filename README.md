@@ -5,4 +5,4 @@ One-page site for House of Infra (construction, interiors & architecture, Ludhia
 - `index.html` - the page
 - `assets/stills/` - project photos
 - `assets/films/` - frames for the scroll-through project films (one folder per project)
-- `nowora.json` - make4yu showcase and stats config
+- `make4yu.json` - make4yu showcase and stats config
